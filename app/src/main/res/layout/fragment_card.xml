@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/LayoutCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_snow"
+        app:layoutDescription="@xml/fragment_card_xml_layoutcard_scene"
+        tools:context=".card.CardFragment">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/LayoutCardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Title"
+            android:textColor="@color/red"
+            android:textSize="72sp"
+            app:layout_constraintBottom_toTopOf="@id/LayoutCardFrom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/LayoutCardAvatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/face1"
+            app:layout_constraintBottom_toTopOf="@id/LayoutCardText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LayoutCardFrom" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/LayoutCardFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="From"
+            android:textColor="@color/white"
+            android:textSize="36dp"
+            app:layout_constraintBottom_toTopOf="@id/LayoutCardAvatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LayoutCardTitle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/LayoutCardText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="sans-serif-black"
+            android:text="text text text text text text text text text text text text text text text text text text text texte texte"
+            android:textColor="@color/red"
+            android:textSize="28dp"
+            app:layout_constraintBottom_toTopOf="@id/LayoutCardImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LayoutCardAvatar"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/LayoutCardImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/banana2"
+            app:layout_constraintBottom_toTopOf="@id/LayoutCardName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LayoutCardText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/LayoutCardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Name"
+            android:textColor="@color/red"
+            android:textSize="72sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LayoutCardImage" />
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>
