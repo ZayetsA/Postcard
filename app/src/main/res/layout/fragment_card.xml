@@ -9,24 +9,24 @@
         android:layout_height="match_parent"
         android:background="@drawable/bg_snow"
         app:layoutDescription="@xml/fragment_card_xml_layoutcard_scene"
-        tools:context=".card.CardFragment">
+        tools:context=".card.CardTestFragment">
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/LayoutCardTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
-            android:text="Title"
+            android:text="@string/card_title_text"
             android:textColor="@color/red"
-            android:textSize="72sp"
+            android:textSize="@dimen/text_72"
             app:layout_constraintBottom_toTopOf="@id/LayoutCardFrom"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/LayoutCardAvatar"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
             android:src="@drawable/face1"
             app:layout_constraintBottom_toTopOf="@id/LayoutCardText"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,9 +37,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:text="From"
+            android:text="@string/card_from_text"
             android:textColor="@color/white"
-            android:textSize="36dp"
+            android:textSize="@dimen/text_36"
             app:layout_constraintBottom_toTopOf="@id/LayoutCardAvatar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/LayoutCardTitle" />
@@ -48,13 +48,13 @@
             android:id="@+id/LayoutCardText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="@dimen/margin_50"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="50dp"
             android:fontFamily="sans-serif-black"
-            android:text="text text text text text text text text text text text text text text text text text text text texte texte"
+            android:text="@string/card_text_text"
             android:textColor="@color/red"
-            android:textSize="28dp"
+            android:textSize="@dimen/text_28"
             app:layout_constraintBottom_toTopOf="@id/LayoutCardImage"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -63,8 +63,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/LayoutCardImage"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="@dimen/gif_width"
+            android:layout_height="@dimen/gif_height"
             android:src="@drawable/banana2"
             app:layout_constraintBottom_toTopOf="@id/LayoutCardName"
             app:layout_constraintStart_toStartOf="parent"
@@ -75,9 +75,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
-            android:text="Name"
+            android:text="@string/card_name_text"
             android:textColor="@color/red"
-            android:textSize="72sp"
+            android:textSize="@dimen/text_72"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/LayoutCardImage" />

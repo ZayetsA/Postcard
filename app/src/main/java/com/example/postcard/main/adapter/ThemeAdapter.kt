@@ -1,9 +1,10 @@
-package com.example.postcard.main
+package com.example.postcard.main.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.postcard.databinding.CardItemBinding
+import com.example.postcard.main.model.ExampleModel
 
 class ThemeAdapter(private val itemsList: List<ExampleModel>) :
     RecyclerView.Adapter<ThemeAdapter.ThemeItemHolder>() {

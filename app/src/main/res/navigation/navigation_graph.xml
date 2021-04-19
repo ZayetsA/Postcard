@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/cardFragment"
-        android:name="com.example.postcard.card.CardFragment"
+        android:name="com.example.postcard.card.CardTestFragment"
         android:label="fragment_card"
         tools:layout="@layout/fragment_card" />
 </navigation>

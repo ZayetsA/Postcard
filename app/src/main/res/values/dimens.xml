@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="item_height">250dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="text_72">72sp</dimen>
+    <dimen name="image_width">150dp</dimen>
+    <dimen name="image_height">150dp</dimen>
+    <dimen name="text_36">36sp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="text_28">28sp</dimen>
+    <dimen name="gif_width">150dp</dimen>
+    <dimen name="gif_height">150dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="card_profile_image_width">130dp</dimen>
+    <dimen name="card_profile_image_height">130dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="card_width">150dp</dimen>
+    <dimen name="card_height">150dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+</resources>
