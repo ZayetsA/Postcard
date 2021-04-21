@@ -6,88 +6,88 @@
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
         motion:duration="1000">
-        <KeyFrameSet></KeyFrameSet>
+        <KeyFrameSet />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
         <Constraint
-            android:id="@+id/LayoutCardTitle"
+            android:id="@+id/cardContainerTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            motion:layout_constraintBottom_toTopOf="@id/LayoutCardFrom"
+            motion:layout_constraintBottom_toTopOf="@id/cardContainerFrom"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent" />
         <Constraint
-            android:id="@+id/LayoutCardFrom"
+            android:id="@+id/cardContainerFrom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            motion:layout_constraintBottom_toTopOf="@id/LayoutCardFrom"
+            motion:layout_constraintBottom_toTopOf="@id/cardContainerFrom"
             motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toBottomOf="@id/LayoutCardTitle" />
+            motion:layout_constraintTop_toBottomOf="@id/cardContainerTitle" />
         <Constraint
-            android:id="@+id/LayoutCardAvatar"
+            android:id="@+id/cardContainerAvatar"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            motion:layout_constraintBottom_toTopOf="@id/LayoutCardText"
+            motion:layout_constraintBottom_toTopOf="@id/cardContainerText"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@id/LayoutCardFrom" />
+            motion:layout_constraintTop_toBottomOf="@id/cardContainerFrom" />
         <Constraint
-            android:id="@+id/LayoutCardImage"
+            android:id="@+id/cardContainerImage"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            motion:layout_constraintBottom_toTopOf="@id/LayoutCardName"
+            motion:layout_constraintBottom_toTopOf="@id/cardContainerName"
             motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toBottomOf="@id/LayoutCardText" />
+            motion:layout_constraintTop_toBottomOf="@id/cardContainerText" />
         <Constraint
-            android:id="@+id/LayoutCardName"
+            android:id="@+id/cardContainerName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/LayoutCardImage" />
+            motion:layout_constraintTop_toBottomOf="@+id/cardContainerImage" />
     </ConstraintSet>
 
 
     <ConstraintSet android:id="@+id/end">
         <Constraint
-            android:id="@+id/LayoutCardTitle"
+            android:id="@+id/cardContainerTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            motion:layout_constraintBottom_toTopOf="@id/LayoutCardFrom"
+            motion:layout_constraintBottom_toTopOf="@id/cardContainerFrom"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@id/LayoutCardTitle" />
+            motion:layout_constraintTop_toBottomOf="@id/cardContainerTitle" />
         <Constraint
-            android:id="@+id/LayoutCardFrom"
+            android:id="@+id/cardContainerFrom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            motion:layout_constraintBottom_toTopOf="@id/LayoutCardFrom"
+            motion:layout_constraintBottom_toTopOf="@id/cardContainerFrom"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent" />
         <Constraint
-            android:id="@+id/LayoutCardAvatar"
+            android:id="@+id/cardContainerAvatar"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            motion:layout_constraintBottom_toTopOf="@id/LayoutCardText"
+            motion:layout_constraintBottom_toTopOf="@id/cardContainerText"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@id/LayoutCardFrom" />
+            motion:layout_constraintTop_toBottomOf="@id/cardContainerFrom" />
         <Constraint
-            android:id="@+id/LayoutCardImage"
+            android:id="@+id/cardContainerImage"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            motion:layout_constraintBottom_toTopOf="@id/LayoutCardName"
+            motion:layout_constraintBottom_toTopOf="@id/cardContainerName"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@id/LayoutCardText" />
+            motion:layout_constraintTop_toBottomOf="@id/cardContainerText" />
         <Constraint
-            android:id="@+id/LayoutCardName"
+            android:id="@+id/cardContainerName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/LayoutCardImage" />
+            motion:layout_constraintTop_toBottomOf="@+id/cardContainerImage" />
     </ConstraintSet>
 </MotionScene>

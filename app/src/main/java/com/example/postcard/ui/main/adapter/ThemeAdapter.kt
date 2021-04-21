@@ -1,10 +1,10 @@
-package com.example.postcard.main.adapter
+package com.example.postcard.ui.main.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.postcard.databinding.CardItemBinding
-import com.example.postcard.main.model.ExampleModel
+import com.example.postcard.ui.main.model.ExampleModel
 
 class ThemeAdapter(private val itemsList: List<ExampleModel>) :
     RecyclerView.Adapter<ThemeAdapter.ThemeItemHolder>() {
@@ -28,9 +28,9 @@ class ThemeAdapter(private val itemsList: List<ExampleModel>) :
     class ThemeItemHolder(private val itemBinding: CardItemBinding) :
         RecyclerView.ViewHolder(itemBinding.root) {
         fun bind(item: ExampleModel) {
-            itemBinding.ItemTitle.text = item.title
-            itemBinding.ItemDescription.text = item.text
-            itemBinding.ItemImage.setImageResource(item.imageId)
+            itemBinding.cardItemTitle.text = item.title
+            itemBinding.cardItemDescription.text = item.text
+            itemBinding.cardItemImage.setImageResource(item.imageId)
         }
     }
 }

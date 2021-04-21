@@ -4,48 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.motion.widget.MotionLayout
-        android:id="@+id/LayoutCard"
+        android:id="@+id/cardContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg_snow"
-        app:layoutDescription="@xml/fragment_card_xml_layoutcard_scene"
-        tools:context=".card.CardTestFragment">
+        app:layoutDescription="@xml/fragment_card_xml_card_container_scene"
+        tools:context=".ui.card.CardTestFragment">
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/LayoutCardTitle"
+            android:id="@+id/cardContainerTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:text="@string/card_title_text"
             android:textColor="@color/red"
             android:textSize="@dimen/text_72"
-            app:layout_constraintBottom_toTopOf="@id/LayoutCardFrom"
+            app:layout_constraintBottom_toTopOf="@id/cardContainerFrom"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/LayoutCardAvatar"
+            android:id="@+id/cardContainerAvatar"
             android:layout_width="@dimen/image_width"
             android:layout_height="@dimen/image_height"
             android:src="@drawable/face1"
-            app:layout_constraintBottom_toTopOf="@id/LayoutCardText"
+            app:layout_constraintBottom_toTopOf="@id/cardContainerText"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/LayoutCardFrom" />
+            app:layout_constraintTop_toBottomOf="@id/cardContainerFrom" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/LayoutCardFrom"
+            android:id="@+id/cardContainerFrom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
             android:text="@string/card_from_text"
             android:textColor="@color/white"
             android:textSize="@dimen/text_36"
-            app:layout_constraintBottom_toTopOf="@id/LayoutCardAvatar"
+            app:layout_constraintBottom_toTopOf="@id/cardContainerAvatar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/LayoutCardTitle" />
+            app:layout_constraintTop_toBottomOf="@id/cardContainerTitle" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/LayoutCardText"
+            android:id="@+id/cardContainerText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_50"
@@ -55,23 +55,23 @@
             android:text="@string/card_text_text"
             android:textColor="@color/red"
             android:textSize="@dimen/text_28"
-            app:layout_constraintBottom_toTopOf="@id/LayoutCardImage"
+            app:layout_constraintBottom_toTopOf="@id/cardContainerImage"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/LayoutCardAvatar"
+            app:layout_constraintTop_toBottomOf="@id/cardContainerAvatar"
             app:layout_constraintWidth_percent="0.7" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/LayoutCardImage"
+            android:id="@+id/cardContainerImage"
             android:layout_width="@dimen/gif_width"
             android:layout_height="@dimen/gif_height"
             android:src="@drawable/banana2"
-            app:layout_constraintBottom_toTopOf="@id/LayoutCardName"
+            app:layout_constraintBottom_toTopOf="@id/cardContainerName"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/LayoutCardText" />
+            app:layout_constraintTop_toBottomOf="@id/cardContainerText" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/LayoutCardName"
+            android:id="@+id/cardContainerName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
@@ -80,7 +80,7 @@
             android:textSize="@dimen/text_72"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/LayoutCardImage" />
+            app:layout_constraintTop_toBottomOf="@+id/cardContainerImage" />
 
 
     </androidx.constraintlayout.motion.widget.MotionLayout>

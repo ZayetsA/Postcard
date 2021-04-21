@@ -4,37 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/MainFragmentLayout"
+        android:id="@+id/parentFragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg_snow"
         android:padding="@dimen/padding_15"
-        tools:context=".main.MainFragment">
+        tools:context=".ui.main.MainFragment">
 
         <TextView
-            android:id="@+id/MainFragmentInputNameDesc"
+            android:id="@+id/parentFragmentInputNameDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/main_input_name_desc"
             android:textColor="@color/black"
             android:textSize="@dimen/text_12"
-            app:layout_constraintBottom_toTopOf="@+id/MainFragmentInputName"
+            app:layout_constraintBottom_toTopOf="@+id/parentFragmentInputName"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/MainFragmentInputName"
+            android:id="@+id/parentFragmentInputName"
             style="@style/TextInputEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_input_background"
             android:hint="@string/main_input_name_hint"
+            android:maxLines="1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/MainFragmentInputNameDesc"
+            app:layout_constraintTop_toBottomOf="@+id/parentFragmentInputNameDesc"
             app:layout_constraintWidth_percent="0.5" />
 
         <TextView
-            android:id="@+id/MainFragmentInputTitleDesc"
+            android:id="@+id/parentFragmentInputTitleDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_10"
@@ -42,17 +43,18 @@
             android:textColor="@color/black"
             android:textSize="@dimen/text_12"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/MainFragmentInputName" />
+            app:layout_constraintTop_toBottomOf="@+id/parentFragmentInputName" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/MainFragmentInputTitle"
+            android:id="@+id/parentFragmentInputTitle"
             style="@style/TextInputEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_input_background"
             android:hint="@string/main_input_title_hint"
+            android:maxLines="1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/MainFragmentInputTitleDesc"
+            app:layout_constraintTop_toBottomOf="@+id/parentFragmentInputTitleDesc"
             app:layout_constraintWidth_percent="0.5" />
 
         <TextView
@@ -64,21 +66,22 @@
             android:textColor="@color/black"
             android:textSize="@dimen/text_12"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/MainFragmentInputTitle" />
+            app:layout_constraintTop_toBottomOf="@+id/parentFragmentInputTitle" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/MainFragmentInputText"
+            android:id="@+id/parentFragmentInputText"
             style="@style/TextInputEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_input_background"
             android:hint="@string/main_input_text_tint"
+            android:maxLines="1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/MainFragmentInputTextDesc"
             app:layout_constraintWidth_percent="0.5" />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/MainFragmentProfileImage"
+            android:id="@+id/parentFragmentProfileImage"
             android:layout_width="@dimen/card_profile_image_width"
             android:layout_height="@dimen/card_profile_image_height"
             android:layout_marginTop="@dimen/margin_10"
@@ -88,7 +91,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/MainFragmentButtonTest"
+            android:id="@+id/parentFragmentButtonTest"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_20"
@@ -100,11 +103,11 @@
             android:textSize="@dimen/text_24"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/MainFragmentInputText"
+            app:layout_constraintTop_toBottomOf="@+id/parentFragmentInputText"
             app:layout_constraintWidth_percent="0.4" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/MainFragmentButtonLaunch"
+            android:id="@+id/parentFragmentButtonLaunch"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_10"
@@ -116,65 +119,65 @@
             android:textSize="@dimen/text_24"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/MainFragmentButtonTest"
+            app:layout_constraintTop_toBottomOf="@+id/parentFragmentButtonTest"
             app:layout_constraintWidth_percent="0.4" />
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/mainFragmentImagePrevious"
+            android:id="@+id/parentFragmentButtonPrevious"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/margin_20"
             android:layout_marginBottom="@dimen/margin_40"
             android:background="@android:color/transparent"
             android:src="@drawable/left_arrow"
-            app:layout_constraintBottom_toBottomOf="@+id/MainFragmentImageSwitcher"
-            app:layout_constraintEnd_toStartOf="@+id/MainFragmentImageSwitcher" />
+            app:layout_constraintBottom_toBottomOf="@+id/parentFragmentImageSwitcher"
+            app:layout_constraintEnd_toStartOf="@+id/parentFragmentImageSwitcher" />
 
         <ImageSwitcher
-            android:id="@+id/MainFragmentImageSwitcher"
+            android:id="@+id/parentFragmentImageSwitcher"
             android:layout_width="@dimen/card_width"
             android:layout_height="@dimen/card_height"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/MainFragmentButtonLaunch" />
+            app:layout_constraintTop_toBottomOf="@+id/parentFragmentButtonLaunch" />
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/MainFragmentImageNext"
+            android:id="@+id/parentFragmentButtonNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_20"
             android:layout_marginBottom="@dimen/margin_40"
             android:background="@android:color/transparent"
             android:src="@drawable/right_arrow"
-            app:layout_constraintBottom_toBottomOf="@+id/MainFragmentImageSwitcher"
-            app:layout_constraintStart_toEndOf="@+id/MainFragmentImageSwitcher" />
+            app:layout_constraintBottom_toBottomOf="@+id/parentFragmentImageSwitcher"
+            app:layout_constraintStart_toEndOf="@+id/parentFragmentImageSwitcher" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/MainFragmentCardRecyclerView"
+            android:id="@+id/parentFragmentCards"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/MainFragmentImageSwitcher" />
+            app:layout_constraintTop_toBottomOf="@id/parentFragmentImageSwitcher" />
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/MainFragmentThemePrevious"
+            android:id="@+id/parentFragmentThemePrevious"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/margin_80"
             android:background="@android:color/transparent"
             android:src="@drawable/left_arrow_bold"
-            app:layout_constraintBottom_toBottomOf="@id/MainFragmentCardRecyclerView"
+            app:layout_constraintBottom_toBottomOf="@id/parentFragmentCards"
             app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/MainFragmentThemeNext"
+            android:id="@+id/parentFragmentThemeNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/margin_80"
             android:background="@android:color/transparent"
             android:src="@drawable/right_arrow_bold"
-            app:layout_constraintBottom_toBottomOf="@id/MainFragmentCardRecyclerView"
+            app:layout_constraintBottom_toBottomOf="@id/parentFragmentCards"
             app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
